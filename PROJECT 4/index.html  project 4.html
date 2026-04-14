@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="title">
+            <h1>Currency Converter app</h1>
+        </div>
+        <div class="form-group">
+            <label for="frwAmount">Enter Amount in FRW</label>
+            <input type="number" id="frwAmount" name="frwAmount" require placeholder="e.g. 1000 RWF">
+        </div>
+
+        <div class="form-group">
+            <label for="selectCurrency">Select Currency</label>
+            <select name="selectCurrency" id="selectCurrency">
+            <!-- Global Currencies -->
+            <option value="USD">United States Dollar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+
+            <!-- African Currencies -->
+            <option value="ZAR">South African Rand (ZAR)</option>
+            <option value="NGN">Nigerian Naira (NGN)</option>
+            <option value="EGP">Egyptian Pound (EGP)</option>
+            <option value="GHS">Ghanaian Cedi (GHS)</option>
+            <option value="MAD">Moroccan Dirham (MAD)</option>
+            <option value="DZD">Algerian Dinar (DZD)</option>
+            <option value="SDG">Sudanese Pound (SDG)</option>
+            <option value="SCR">Seychellois Rupee (SCR)</option>
+            <option value="MUR">Mauritian Rupee (MUR)</option>
+
+            <!-- East African Community (EAC) Currencies -->
+            <option value="KES">Kenyan Shilling (KES) - EAC</option>
+            <option value="UGX">Ugandan Shilling (UGX) - EAC</option>
+            <option value="TZS">Tanzanian Shilling (TZS) - EAC</option>
+            <option value="RWF">Rwandan Franc (RWF) - EAC</option>
+            <option value="BIF">Burundian Franc (BIF) - EAC</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <label for="currencyRate">Rate</label>
+            <input type="number" id="currencyRate" name="currencyRate" step="0.000001" required placeholder="e.g. 0.00077">
+        </div>
+
+        <button type="submit"><strong>Convert</strong></button>
+        <br>
+        <br>
+
+        <label for="result">Result</label>
+        <div id="result">
+            <p id="resultDisplay">Result Here...</p>
+        </div>
+        <p style="text-align: center; margin-bottom: 0; color: rgb(210, 204, 204);">&copy; 2026 Adolphe ||UR Huye Br BIT</p>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    margin: 0;
+}
+
+.title {
+    background-color: rgb(57, 178, 211);
+    ;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc !important;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+select option {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(57, 178, 211);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(99, 123, 94);
+}
+
+#result {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10 0px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+}
+
+#result p {
+    color: #fff;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Make each label+input a flex container */
+
+form .form-group {
+    display: flex;
+    align-items: center;
+    /* vertically center the input with label */
+    margin-bottom: 15px;
+}
+
+
+/* Make labels fixed width so inputs align */
+
+form .form-group label {
+    width: 150px;
+    /* adjust width as needed */
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+
+/* Inputs take the remaining space */
+
+form .form-group input,
+form .form-group select {
+    flex: 1;
+    padding: 8px 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+form label {
+    font-weight: 600;
+    color: #333;
+}
