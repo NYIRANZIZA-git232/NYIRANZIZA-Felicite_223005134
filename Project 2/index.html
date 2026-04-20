@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>STUDENT REGISTRATION FORM</h1>
+        <form id="registrationForm" action="submit.php" method="POST">
+
+            <!-- Personal Information -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">EMAIL ID</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">MOBILE NUMBER</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label>DATE OF BIRTH</label>
+                <div class="dob-container">
+                    <select id="day" name="day" required>
+                        <option value="">Day</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                    </select>
+                    <select id="month" name="month" required>
+                        <option value="">Month</option>
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select id="year" name="year" required>
+                        <option value="">Year</option>
+                        <option value="">2000</option>
+                        <option value="">2001</option>
+                        <option value="">2002</option>
+                        <option value="">2004</option>
+                        <option value="">2005</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label>GENDER</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group full-width">
+                <label for="address">ADDRESS</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city">CITY</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pincode">PIN CODE</label>
+                    <input type="text" id="pincode" name="pincode" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="state">STATE</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">COUNTRY</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Japan">Japan</option>
+                        <option value="China">China</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Hobbies -->
+            <div class="form-group">
+                <label>HOBBIES</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="drawing" name="hobbies[]" value="Drawing">
+                    <label for="drawing">Drawing</label>
+                    <input type="checkbox" id="singing" name="hobbies[]" value="Singing">
+                    <label for="singing">Singing</label>
+                    <input type="checkbox" id="dancing" name="hobbies[]" value="Dancing">
+                    <label for="dancing">Dancing</label>
+                    <input type="checkbox" id="sketching" name="hobbies[]" value="Sketching">
+                    <label for="sketching">Sketching</label>
+                    <input type="checkbox" id="hobbiesOther" name="hobbies[]" value="Other">
+                    <label for="hobbiesOther">Others</label>
+                    <input type="text" id="hobbiesOtherText" name="hobbiesOtherText" placeholder="Specify other hobbies">
+                </div>
+            </div>
+
+            <!-- Qualification -->
+            <div class="form-group qualification-section">
+                <label>QUALIFICATION</label>
+                <table class="qualification-table">
+                    <thead>
+                        <tr>
+                            <th>Sl.No.</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text" name="board10" maxlength="10" required></td>
+                            <td><input type="text" name="percentage10" step="0.01" min="0" max="100" required></td>
+                            <td><input type="text" name="year10" maxlength="4" required></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text" name="board12" maxlength="10" required></td>
+                            <td><input type="text" name="percentage12" step="0.01" min="0" max="100" required></td>
+                            <td><input type="text" name="year12" maxlength="4" required></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text" name="boardGrad" maxlength="10" required></td>
+                            <td><input type="text" name="percentageGrad" step="0.01" min="0" max="100" required></td>
+                            <td><input type="text" name="yearGrad" maxlength="4" required></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text" name="boardMasters" maxlength="10"></td>
+                            <td><input type="text" name="percentageMasters" step="0.01" min="0" max="100"></td>
+                            <td><input type="text" name="yearMasters" maxlength="4"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td class="note">(10 Char max)</td>
+                            <td class="note">(upto 2 decimal)</td>
+
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <!-- Courses Applied For -->
+            <div class="form-group">
+                <label>COURSES APPLIED FOR</label>
+                <div class="radio-group">
+                    <input type="radio" id="bca" name="course" value="BCA" required>
+                    <label for="bca">BCA</label>
+                    <input type="radio" id="bcom" name="course" value="B.Com" required>
+                    <label for="bcom">B.Com</label>
+                    <input type="radio" id="bsc" name="course" value="B.Sc" required>
+                    <label for="bsc">B.Sc</label>
+                    <input type="radio" id="ba" name="course" value="B.A" required>
+                    <label for="ba">B.A</label>
+                </div>
+                <!-- Submit Buttons -->
+                <div class="button-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+
+        </form>
+        <div class="footer">
+
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
